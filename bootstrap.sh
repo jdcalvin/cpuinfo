@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Running initial provision script - Thiy may take awhile"
+echo "Running initial provision script - This may take awhile"
 # rvm and ruby
 su - vagrant -c 'command curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -'
 su - vagrant -c 'curl -sSL https://get.rvm.io | bash -s stable --ruby=2.5.0'
