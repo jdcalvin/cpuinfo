@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 echo "Running startup script"
 cd /vagrant
 bundle install

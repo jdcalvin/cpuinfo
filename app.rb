@@ -1,6 +1,5 @@
 require 'sinatra'
 require 'json'
-require 'pry'
 
 class CpuInfo < Sinatra::Base
   get '/' do
@@ -12,8 +11,8 @@ class CpuInfo < Sinatra::Base
   def format_cpuinfo
     response = {}
     sanitized_to_array = cpuinfo.gsub("\t\t","\t")
-                               .split("\n")
-                               .map {|x| x.split("\t: ") }
+                                .split("\n")
+                                .map {|x| x.split("\t: ") }
 
     # convert [[k,v]] to hash
     sanitized_to_array.each do |k,v|

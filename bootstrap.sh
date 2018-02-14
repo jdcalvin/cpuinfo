@@ -9,5 +9,3 @@ su - vagrant -c 'echo "gem: --no-ri --no-rdoc" > ~/.gemrc'
 
 su - vagrant -c "gem install bundler"
 echo "Ruby 2.5.0 installed"
-
-
