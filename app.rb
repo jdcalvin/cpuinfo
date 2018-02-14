@@ -17,7 +17,8 @@ class CpuInfo < Sinatra::Base
 
     # convert [[k,v]] to hash
     sanitized_to_array.each do |k,v|
-      response[k] = v
+      formatted_key = k.gsub(" ", "_").downcase
+      response[formatted_key] = v
     end
 
     # format individual attributes and return response
